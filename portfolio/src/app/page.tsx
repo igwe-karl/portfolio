@@ -197,9 +197,10 @@ export default function Portfolio() {
       <section className="text-center space-y-2">
         <h2 className="text-2xl font-semibold text-center mb-4">Contact</h2>
         <p>Feel free to reach out via email or connect on social media!</p>
-        <div className="flex justify-center gap-4">
+        <div className="flex justify-center gap-4 cursor-pointer">
           {myContact.map((contact, idx) => (
             <Button
+              className="cursor-pointer"
               variant="outline"
               key={idx}
               onClick={() => window.open(contact.link, "_blank")}
@@ -209,7 +210,7 @@ export default function Portfolio() {
           ))}
         </div>
       </section>
-      <footer className="border-t-2 border-gray-200 dark:border-yellow-800 p-6 bg-gray-100 dark:bg-yellow-800">
+      <footer className="border-t-2 border-gray-200 dark:border-gray-800 p-6 bg-gray-100 dark:bg-gray-800 rounded-xl">
         <h2 className="text-2xl font-semibold text-center mb-4">
           Let&apos;s Work Together 🤝
         </h2>
